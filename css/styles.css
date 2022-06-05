@@ -872,6 +872,13 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   padding-left: 16px;
   color: var(--contacts-text-color);
+  transition: border-color var(--animation-timimg) var(--animation-function);
+  outline: transparent;
+}
+
+.subscribe-input:hover,
+.subscribe-input:focus {
+  border-color: var(--accent-color);
 }
 
 .subscribe-button {
