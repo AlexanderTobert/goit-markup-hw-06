@@ -428,6 +428,21 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-section">
+          <p class="text">Подпишитесь на рассылку</p>
+
+          <form class="subscribe-form">
+            <label>
+              <input type="email" class="subscribe-input" name="email" placeholder="E-mail" />
+            </label>
+            <button type="button" class="subscribe-button">
+              Подписаться
+              <svg height="24" width="24" class="send-icon">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -438,6 +453,36 @@
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
           </button>
+        </div>
+        <div class="modal-container">
+          <h2 class="modal-headline">Оставьте свои данные, мы вам перезвоним</h2>
+          <form class="modal-form">
+            <label class="modal-label"
+              >Имя
+              <input type="text" class="modal-input" name="name" />
+              <span class="modal-icon">
+                <svg height="18" width="18">
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+              </span>
+            </label>
+            <label class="modal-label">
+              Телефон
+              <input type="tel" class="modal-input" name="phone_number" />
+            </label>
+            <label class="modal-label">
+              Почта
+              <input type="email" class="modal-input" class="" name="email" />
+            </label>
+            <label class="modal-label">
+              Комментарий
+              <textarea name="comment" placeholder="Введите текст"></textarea>
+            </label>
+            <label class="">
+              <input type="checkbox" name="policy" name="contract" /> Соглашаюсь с рассылкой и
+              принимаю <a>Условия договора</a>
+            </label>
+          </form>
         </div>
       </div>
     </div>
