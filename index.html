@@ -435,7 +435,7 @@
             <label>
               <input type="email" class="subscribe-input" name="email" placeholder="E-mail" />
             </label>
-            <button type="button" class="subscribe-button">
+            <button type="submit" class="subscribe-button">
               Подписаться
               <svg height="24" width="24" class="send-icon">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -489,9 +489,16 @@
               <textarea class="modal-comment" name="comment" placeholder="Введите текст"></textarea>
             </label>
             <label class="group-policy">
-              <input type="checkbox" name="policy" name="contract" /> Соглашаюсь с рассылкой и
-              принимаю <a class="contrat-link" href="">Условия договора</a>
+              <input class="checkbox" type="checkbox" name="policy" name="contract" />
+              <span class="icon">
+                <!-- <svg height="12" width="12">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg> -->
+              </span>
+              Соглашаюсь с рассылкой и принимаю
+              <a class="contract-link" href=""> Условия договора</a>
             </label>
+            <button type="submit" class="aplly-button">Отправить</button>
           </form>
         </div>
       </div>
