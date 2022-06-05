@@ -492,13 +492,19 @@ body {
   padding: 10px 55px;
   color: var(--butons-text-color);
   background-color: #188ce8;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0;
   border-radius: 4px;
   border-color: transparent;
   width: 200px;
   cursor: pointer;
   align-items: center;
   margin: 0 auto;
+  transition: box-shadow var(--animation-timimg) var(--animation-function);
+}
+
+.aplly-button:hover,
+.aplly-button:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Hero */
@@ -869,16 +875,18 @@ body {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0);
   padding-left: 16px;
   color: var(--contacts-text-color);
-  transition: border-color var(--animation-timimg) var(--animation-function);
+  transition: border-color var(--animation-timimg) var(--animation-function),
+    filter var(--animation-timimg) var(--animation-function);
   outline: transparent;
 }
 
 .subscribe-input:hover,
 .subscribe-input:focus {
   border-color: var(--accent-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .subscribe-button {
@@ -898,6 +906,7 @@ body {
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--butons-text-color);
+  transition: box-shadow var(--animation-timimg) var(--animation-function);
 }
 
 .subscribe-button:hover,
